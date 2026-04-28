@@ -1,0 +1,63 @@
+# Site settings
+remote_theme: "mmistakes/minimal-mistakes@4.26.2"
+minimal_mistakes_skin: "default"  # options: "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
+title: "Daniel Nakash"
+name: "Daniel Nakash"
+description: "Finance professional. Aspiring leader in corporate finance and strategy."
+url: "https://danielnakash.com"
+
+# Author sidebar
+author:
+  name: "Daniel Nakash"
+  avatar: # optional: "/assets/images/headshot.jpg" if you upload one
+  bio: "Finance candidate interested in corporate strategy, FP&A, and capital markets."  # EDIT
+  location: "Miami, FL"  # EDIT or remove
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:danielznakash@gmail.com"  # EDIT
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/danielnakash"  # EDIT
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/danielnksh"  # EDIT if different
+
+# Site footer
+footer:
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:danielznakash@gmail.com"  # EDIT
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/danielnakash"  # EDIT
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-include-cache
+
+# Defaults — applies the author sidebar to all pages
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+  - scope:
+      path: "_projects"
+      type: projects
+    values:
+      layout: single
+      author_profile: true
+      share: false
+      
+# Collections — this creates a "projects" section
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:path/
