@@ -4,14 +4,14 @@ minimal_mistakes_skin: "default"  # options: "air", "aqua", "contrast", "dark", 
 
 title: "Daniel Nakash"
 name: "Daniel Nakash"
-description: "Finance professional. Aspiring leader in corporate finance and strategy."
+description: "descrption 1"
 url: "https://danielnakash.com"
 
 # Author sidebar
 author:
   name: "Daniel Nakash"
   avatar: # optional: "/assets/images/headshot.jpg" if you upload one
-  bio: "Finance candidate interested in corporate strategy, FP&A, and capital markets."  # EDIT
+  bio: "descrp/bio 2"  # EDIT
   location: "Miami, FL"  # EDIT or remove
   links:
     - label: "Email"
