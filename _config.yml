@@ -1,63 +1,50 @@
-# Site settings
-remote_theme: "mmistakes/minimal-mistakes@4.26.2"
-minimal_mistakes_skin: "air"  # options: "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daniel Nksh</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-title: "Daniel Nakash"
-name: "Daniel Nakash"
-description: "descrption 1"
-url: "https://danielnakash.com"
+    body {
+      background-color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      flex-direction: column;
+      gap: 32px;
+    }
 
-# Author sidebar
-author:
-  name: "Daniel Nakash"
-  avatar: # optional: "/assets/images/headshot.jpg" if you upload one
-  bio: "descrp/bio 2"  # EDIT
-  location: "Miami, FL"  # EDIT or remove
-  links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:danielznakash@gmail.com"  # EDIT
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://linkedin.com/in/danielnakash"  # EDIT
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/danielnksh"  # EDIT if different
+    img {
+      width: 200px;
+    }
 
-# Site footer
-footer:
-  links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:danielznakash@gmail.com"  # EDIT
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://linkedin.com/in/danielnakash"  # EDIT
+    a.portfolio-btn {
+      background-color: #89CFF0;
+      color: #ffffff;
+      text-decoration: none;
+      padding: 14px 40px;
+      border-radius: 8px;
+      font-size: 18px;
+      font-family: sans-serif;
+      font-weight: 600;
+      letter-spacing: 1px;
+      transition: background-color 0.2s;
+    }
 
-# Build settings
-markdown: kramdown
-plugins:
-  - jekyll-feed
-  - jekyll-include-cache
-
-# Defaults — applies the author sidebar to all pages
-defaults:
-  - scope:
-      path: ""
-      type: pages
-    values:
-      layout: single
-      author_profile: true
-  - scope:
-      path: "_projects"
-      type: projects
-    values:
-      layout: single
-      author_profile: true
-      share: false
-      
-# Collections — this creates a "projects" section
-collections:
-  projects:
-    output: true
-    permalink: /:collection/:path/
+    a.portfolio-btn:hover {
+      background-color: #60b8e0;
+    }
+  </style>
+</head>
+<body>
+  <img src="DN.png" alt="DN Logo">
+  <a class="portfolio-btn" href="portfolio.html">Portfolio</a>
+</body>
+</html>
